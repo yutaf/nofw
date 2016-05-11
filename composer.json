@@ -3,6 +3,7 @@
   "description": "NHK program reminder",
   "license": "MIT",
   "require" : {
+    "php": ">=7.0.0",
     "monolog/monolog": "^1.18",
     "hirak/prestissimo": "^0.2.3",
     "filp/whoops": "^2.1"
