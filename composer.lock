@@ -4,9 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f3181cad465ba8333ef98cd935012617",
-    "content-hash": "9475ad0f2697bae7f6e2f1bac4ce4d92",
+    "hash": "98545ff9741a96f457c3574d7abd3603",
+    "content-hash": "8634c62751bbd3e3d109e803e533657c",
     "packages": [
+        {
+            "name": "hirak/prestissimo",
+            "version": "0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hirak/prestissimo.git",
+                "reference": "e78a097b5bcf7abf44563a09f67482e38d0cec4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hirak/prestissimo/zipball/e78a097b5bcf7abf44563a09f67482e38d0cec4b",
+                "reference": "e78a097b5bcf7abf44563a09f67482e38d0cec4b",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0.0",
+                "ext-curl": "*",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.0",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Hirak\\Prestissimo\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hirak\\Prestissimo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hiraku NAKANO",
+                    "email": "hiraku@tojiru.net"
+                }
+            ],
+            "description": "composer parallel install plugin",
+            "keywords": [
+                "install",
+                "parallel",
+                "speedup"
+            ],
+            "time": "2016-05-08 03:39:55"
+        },
         {
             "name": "monolog/monolog",
             "version": "1.19.0",
