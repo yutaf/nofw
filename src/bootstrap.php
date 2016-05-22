@@ -8,12 +8,13 @@ error_reporting(E_ALL);
 
 //$environment = 'development';
 //$environment = 'production';
+$environment = getenv('ENVIRONMENT');
 
 /**
  * Register the error handler
  */
 $whoops = new \Whoops\Run;
-if (getenv('ENVIRONMENT') === 'production') {
+if ($environment === 'production') {
     $whoops->pushHandler(function($e){
         echo 'Friendly error page and send an email to the developer';
     });
