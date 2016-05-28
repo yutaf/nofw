@@ -24,4 +24,11 @@ $injector->define('Mustache_Engine', [
     ],
 ]);
 
+$injector->define('Nhkr\Page\FilePageReader', [
+    ':pageFolder' => __DIR__ . '/../pages',
+]);
+
+$injector->alias('Nhkr\Page\PageReader', 'Nhkr\Page\FilePageReader');
+$injector->share('Nhkr\Page\FilePageReader');
+
 return $injector;
