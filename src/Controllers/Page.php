@@ -5,7 +5,7 @@ namespace Nhkr\Controllers;
 use Http\Response;
 use Nhkr\Page\InvalidPageException;
 use Nhkr\Page\PageReader;
-use Nhkr\Template\Renderer;
+use Nhkr\Template\FrontendRenderer;
 
 class Page
 {
@@ -13,7 +13,7 @@ class Page
     private $renderer;
     private $pageReader;
 
-    function __construct(Response $response, Renderer $renderer, PageReader $pageReader)
+    function __construct(Response $response, FrontendRenderer $renderer, PageReader $pageReader)
     {
         $this->response = $response;
         $this->renderer = $renderer;

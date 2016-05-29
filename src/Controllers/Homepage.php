@@ -4,7 +4,7 @@ namespace Nhkr\Controllers;
 
 use Http\Request;
 use Http\Response;
-use Nhkr\Template\Renderer;
+use Nhkr\Template\FrontendRenderer;
 
 class Homepage
 {
@@ -12,7 +12,7 @@ class Homepage
     private $response;
     private $renderer;
 
-    public function __construct(Request $request, Response $response, Renderer $renderer)
+    public function __construct(Request $request, Response $response, FrontendRenderer $renderer)
     {
         $this->request = $request;
         $this->response = $response;
