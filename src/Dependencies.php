@@ -17,13 +17,13 @@ $injector->share('Http\HttpResponse');
 
 $injector->alias('Nhkr\Template\Renderer', 'Nhkr\Template\TwigRenderer');
 //$injector->alias('Nhkr\Template\Renderer', 'Nhkr\Template\MustacheRenderer');
-$injector->define('Mustache_Engine', [
-    ':options' => [
-        'loader' => new Mustache_Loader_FilesystemLoader(__DIR__ . '/../templates', [
-            'extension' => '.html',
-        ]),
-    ],
-]);
+//$injector->define('Mustache_Engine', [
+//    ':options' => [
+//        'loader' => new Mustache_Loader_FilesystemLoader(__DIR__ . '/../templates', [
+//            'extension' => '.html',
+//        ]),
+//    ],
+//]);
 
 $injector->delegate('Twig_Environment', function() use ($injector) {
     $loader = new Twig_Loader_Filesystem(dirname(__DIR__) . '/templates');
