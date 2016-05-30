@@ -1,6 +1,6 @@
 {
   "name": "yutaf/nofw",
-  "description": "NHK program reminder",
+  "description": "no-framework-tutorial sample",
   "license": "MIT",
   "require" : {
     "php": ">=7.0.0",
