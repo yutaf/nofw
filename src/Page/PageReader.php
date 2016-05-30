@@ -1,6 +1,6 @@
 <?php
 
-namespace Nhkr\Page;
+namespace Example\Page;
 
 interface PageReader
 {

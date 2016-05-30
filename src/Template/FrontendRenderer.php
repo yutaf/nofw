@@ -1,5 +1,5 @@
 <?php
 
-namespace Nhkr\Template;
+namespace Example\Template;
 
 interface FrontendRenderer extends Renderer {}

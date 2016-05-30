@@ -1,11 +1,11 @@
 <?php
 
-namespace Nhkr\Controllers;
+namespace Example\Controllers;
 
 use Http\Response;
-use Nhkr\Page\InvalidPageException;
-use Nhkr\Page\PageReader;
-use Nhkr\Template\FrontendRenderer;
+use Example\Page\InvalidPageException;
+use Example\Page\PageReader;
+use Example\Template\FrontendRenderer;
 
 class Page
 {

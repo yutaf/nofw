@@ -1,6 +1,6 @@
 <?php
 
-namespace Nhkr\Menu;
+namespace Example\Menu;
 
 class ArrayMenuReader implements MenuReader
 {

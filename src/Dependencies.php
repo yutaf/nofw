@@ -15,8 +15,8 @@ $injector->define('Http\HttpRequest', [
 $injector->alias('Http\Response', 'Http\HttpResponse');
 $injector->share('Http\HttpResponse');
 
-$injector->alias('Nhkr\Template\Renderer', 'Nhkr\Template\TwigRenderer');
-//$injector->alias('Nhkr\Template\Renderer', 'Nhkr\Template\MustacheRenderer');
+$injector->alias('Example\Template\Renderer', 'Example\Template\TwigRenderer');
+//$injector->alias('Example\Template\Renderer', 'Example\Template\MustacheRenderer');
 //$injector->define('Mustache_Engine', [
 //    ':options' => [
 //        'loader' => new Mustache_Loader_FilesystemLoader(__DIR__ . '/../templates', [
@@ -31,16 +31,16 @@ $injector->delegate('Twig_Environment', function() use ($injector) {
     return $twig;
 });
 
-$injector->alias('Nhkr\Template\FrontendRenderer', 'Nhkr\Template\FrontendTwigRenderer');
+$injector->alias('Example\Template\FrontendRenderer', 'Example\Template\FrontendTwigRenderer');
 
-$injector->alias('Nhkr\Menu\MenuReader', 'Nhkr\Menu\ArrayMenuReader');
-$injector->share('Nhkr\Menu\ArrayMenuReader');
+$injector->alias('Example\Menu\MenuReader', 'Example\Menu\ArrayMenuReader');
+$injector->share('Example\Menu\ArrayMenuReader');
 
-$injector->define('Nhkr\Page\FilePageReader', [
+$injector->define('Example\Page\FilePageReader', [
     ':pageFolder' => __DIR__ . '/../pages',
 ]);
 
-$injector->alias('Nhkr\Page\PageReader', 'Nhkr\Page\FilePageReader');
-$injector->share('Nhkr\Page\FilePageReader');
+$injector->alias('Example\Page\PageReader', 'Example\Page\FilePageReader');
+$injector->share('Example\Page\FilePageReader');
 
 return $injector;

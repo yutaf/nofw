@@ -1,6 +1,6 @@
 <?php
 
-namespace Nhkr\Menu;
+namespace Example\Menu;
 
 interface MenuReader
 {

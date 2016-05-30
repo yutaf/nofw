@@ -1,6 +1,6 @@
 <?php
 
 return [
-    ['GET', '/', ['Nhkr\Controllers\Homepage', 'show']],
-    ['GET', '/{slug}', ['Nhkr\Controllers\Page', 'show']],
+    ['GET', '/', ['Example\Controllers\Homepage', 'show']],
+    ['GET', '/{slug}', ['Example\Controllers\Page', 'show']],
 ];

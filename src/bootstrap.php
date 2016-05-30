@@ -1,6 +1,6 @@
 <?php
 
-namespace Nhkr;
+namespace Example;
 
 require __DIR__ . '/../vendor/autoload.php';
 

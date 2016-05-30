@@ -1,10 +1,10 @@
 <?php
 
-namespace Nhkr\Controllers;
+namespace Example\Controllers;
 
 use Http\Request;
 use Http\Response;
-use Nhkr\Template\FrontendRenderer;
+use Example\Template\FrontendRenderer;
 
 class Homepage
 {

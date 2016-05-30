@@ -1,6 +1,6 @@
 <?php
 
-namespace Nhkr\Template;
+namespace Example\Template;
 
 interface Renderer
 {

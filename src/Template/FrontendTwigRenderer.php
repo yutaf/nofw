@@ -1,8 +1,8 @@
 <?php
 
-namespace Nhkr\Template;
+namespace Example\Template;
 
-use Nhkr\Menu\MenuReader;
+use Example\Menu\MenuReader;
 
 class FrontendTwigRenderer implements FrontendRenderer
 {
